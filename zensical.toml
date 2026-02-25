@@ -1,0 +1,103 @@
+# ============================================================================
+#
+# 파이썬 기초 교재 - Zensical 설정 파일
+#
+# ============================================================================
+
+[project]
+
+site_name = "파이썬 기초"
+
+site_description = "초보자를 위한 Python 프로그래밍 입문"
+
+site_author = "manboha"
+
+#site_url = "https://username.github.io/py-basics/"
+
+copyright = """
+Copyright &copy; 2026 manboha
+"""
+
+nav = [
+  { "서문" = "index.md" },
+  { "0. 개발 환경 구축" = "0. 개발 환경 구축.md" },
+  { "1. 파이썬 문법 기초" = "1. 파이썬 문법 기초.md" },
+  { "2. 데이터 타입과 자료구조" = "2. 데이터 타입과 자료구조.md" },
+  { "3. 제어문" = "3. 제어문.md" },
+  { "4. 함수" = "4. 함수.md" },
+  { "5. 라이브러리 사용법" = "5. 라이브러리 사용법.md" },
+  { "6. 파일 입출력" = "6. 파일 입출력.md" },
+  { "7. 클래스 기초 (선택)" = "7. 클래스 기초 (선택).md" },
+]
+
+# ----------------------------------------------------------------------------
+# 테마 설정
+# ----------------------------------------------------------------------------
+[project.theme]
+
+language = "ko"
+
+features = [
+    # 코드 블록 주석 툴팁
+    "content.code.annotate",
+
+    # 코드 블록 복사 버튼 (교재에서 필수)
+    "content.code.copy",
+
+    # 코드 라인 선택 버튼
+    "content.code.select",
+
+    # 각주 인라인 툴팁
+    "content.footnote.tooltips",
+
+    # 콘텐츠 탭 연동 (문제/풀이 탭 등에 유용)
+    "content.tabs.link",
+
+    # 링크 툴팁
+    "content.tooltips",
+
+    # 이전/다음 페이지 푸터 네비게이션
+    "navigation.footer",
+
+    # 섹션 인덱스 페이지 (챕터 폴더에 index.md 연결)
+    "navigation.indexes",
+
+    # 빠른 페이지 전환
+    "navigation.instant",
+    "navigation.instant.prefetch",
+
+    # 브레드크럼 경로 표시
+    "navigation.path",
+
+    # 사이드바 섹션 그룹화
+    "navigation.sections",
+
+    # 맨 위로 버튼
+    "navigation.top",
+
+    # URL 앵커 자동 추적
+    "navigation.tracking",
+
+    # 검색 결과 하이라이트
+    "search.highlight",
+]
+
+# ----------------------------------------------------------------------------
+# 라이트/다크 모드 토글
+# ----------------------------------------------------------------------------
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "다크 모드로 전환"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "라이트 모드로 전환"
+
+# ----------------------------------------------------------------------------
+# 폰트 (필요 시 주석 해제)
+# ----------------------------------------------------------------------------
+#[project.theme.font]
+#text = "Noto Sans KR"
+#code = "JetBrains Mono"
